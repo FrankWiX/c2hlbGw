@@ -1,4 +1,9 @@
 <?php 
+/**
+Author : Frank WiX
+FB: https://fb.com/WiX3CA
+3xp1r3 Cyber Army 
+**/
 error_reporting(0);
 echo "Frank Wix <br> Server IP : ";
 echo gethostbyname($_SERVER["HTTP_HOST"]);
